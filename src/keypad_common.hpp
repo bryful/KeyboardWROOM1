@@ -68,12 +68,10 @@ enum KeyFunction
     NO_KEY,
     HOLD_KEY,
     COMBO_KEY,
-    MACRO_KEY,
     MOUSE_LEFT_CLICK,  // マウス左クリック
     MOUSE_RIGHT_CLICK, // マウス右クリック
     PREF_CHANGE_KEY,   // プロファイル切り替えキー
-    PREF_PREV_KEY,     // プロファイル逆順切り替えキー
-    ROTARY_SWITCH      // ロータリーエンコーダーのスイッチ
+    PREF_PREV_KEY      // プロファイル逆順切り替えキー
 };
 
 // KeyConfig構造体を先に定義

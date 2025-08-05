@@ -124,15 +124,12 @@ src/
 ```cpp
 enum KeyFunction {
     NO_KEY = 0,              // 無効なキー
-    COMBO_KEY = 1,           // コンビネーションキー
-    HOLD_KEY = 2,            // ホールドキー
+    HOLD_KEY = 1,            // ホールドキー
+    COMBO_KEY = 2,           // コンビネーションキー
     MOUSE_LEFT_CLICK = 3,    // マウス左クリック
     MOUSE_RIGHT_CLICK = 4,   // マウス右クリック
-    MOUSE_MIDDLE_CLICK = 5,  // マウス中ボタンクリック
-    MOUSE_WHEEL_UP = 6,      // マウスホイールアップ
-    MOUSE_WHEEL_DOWN = 7,    // マウスホイールダウン
-    PREF_PREV_KEY = 8,       // 前のプロファイル
-    PREF_CHANGE_KEY = 9      // 次のプロファイル
+    PREF_CHANGE_KEY = 5,     // 次のプロファイル
+    PREF_PREV_KEY = 6        // 前のプロファイル
 };
 ```
 

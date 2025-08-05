@@ -619,18 +619,20 @@ int handleSerial()
 void setup()
 {
   Serial.begin(115200);
-  delay(1000); // USB初期化待機
+  delay(500); // USB初期化待機
 
+  /*
   USB.VID(0xCafe);
   USB.PID(0x3899);
   USB.productName("Fs Keyboard");
   USB.manufacturerName("bry-ful");
   USB.serialNumber("001");
+  */
   USB.begin();
   if (!USB)
   {
     USB.begin();
-    delay(3000);
+    delay(1000);
   }
   Keyboard.begin();
   Mouse.begin();
