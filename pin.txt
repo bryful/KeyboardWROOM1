@@ -1,0 +1,32 @@
+3v3	d2	gnd
+3v3		43
+rst		44
+04	r0	01 ROTARY1_CLK
+05	r1	02 ROTARY1_DT
+06	r2	42 ROTARY1_SW
+07	r3	41 ROTARY2_CLK
+15	c0	40 ROTARY2_DT
+16	c1	39 ROTARY2_SW
+17	c2	38 ROTARY3_CLK
+18	c3	37 ROTARY3_DT
+08		36 ROTARY3_SW
+03		35
+46		00
+9	d8blk	45
+10	d7cs	48
+11	d4mosi	47
+12	d3sck	21
+13	d5rst	20
+14	d6dc	18
+5v0		gnd
+gnd	d1	gnd
+
+
+gnd	d1
+3v3	d2
+12	d3sck
+11	d4mosi
+13	d5rst
+14	d6dc
+10	d7cs
+9	d8blk

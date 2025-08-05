@@ -1,0 +1,16 @@
+﻿// 使用例
+using System.Text.Json;
+
+// プロファイルの読み込み
+string jsonText = File.ReadAllText("profiles.json");
+ProfileCollection profiles = JsonSerializer.Deserialize<ProfileCollection>(jsonText)!;
+
+// キー名の取得
+string keyName = KeyCodeHelper.GetKeyName(HIDKeyCodes.HID_KEY_A); // "A"
+
+// プロファイルの保存
+string json = JsonSerializer.Serialize(profiles, new JsonSerializerOptions 
+{ 
+    WriteIndented = true 
+});
+File.WriteAllText("profiles.json", json);
